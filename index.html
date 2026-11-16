@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- ============ SEO ============ -->
+<title>CHT – Coaching online | Prenota la chiamata gratuita</title>
+<meta name="description" content="Coaching online per chi ha poco tempo e vuole rimettersi in forma. Non sei bloccato dal tuo corpo: ti manca la strategia giusta. Prenota la chiamata conoscitiva gratuita.">
+<meta name="theme-color" content="#120A1A">
+<link rel="canonical" href="https://chtstrength-collab.github.io/cht-landing-/">
+
+<!-- ============ Anteprima social (Instagram, Facebook, WhatsApp) ============ -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="CHT – Competitive Human Training">
+<meta property="og:title" content="Non sei bloccato dal tuo corpo. Ti manca la strategia giusta.">
+<meta property="og:description" content="Coaching online su misura per chi ha poco tempo. Prenota la chiamata conoscitiva gratuita.">
+<meta property="og:url" content="https://chtstrength-collab.github.io/cht-landing-/">
+<meta property="og:image" content="https://chtstrength-collab.github.io/cht-landing-/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo CHT – Competitive Human Training con il titolo: non sei bloccato dal tuo corpo, ti manca la strategia giusta">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- ============ Favicon ============ -->
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="images/favicon-512.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<link rel="preload" href="fonts/montserrat-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+<style>
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/montserrat-latin-wght-normal.woff2) format("woff2")}
+@font-face{font-family:"Montserrat";font-style:italic;font-weight:100 900;font-display:swap;src:url(fonts/montserrat-latin-wght-italic.woff2) format("woff2")}
+
+:root{
+  --bg:#120A1A;          /* sfondo */
+  --surface:#1B1126;     /* card */
+  --surface-2:#251634;   /* card in rilievo */
+  --box:#2A1450;         /* box viola dei testi importanti */
+  --line:#3A2A4D;        /* bordi */
+  --brand:#5B2291;       /* viola: pulsanti, linee */
+  --brand-hover:#6E2DAD;
+  --accent:#9B5DE5;      /* viola chiaro: parole chiave */
+  --ink:#FFFFFF;         /* testo */
+  --ink-2:#B9B3C2;       /* testo secondario */
+  --wa:#25D366;
+  --r-sm:4px;--r-md:12px;--r-lg:24px;
+  --wrap:1120px;
+  --font:"Montserrat",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:17px;line-height:1.6;font-weight:500;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:var(--r-sm)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:absolute;left:16px;top:-60px;background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:var(--r-md);font-weight:700;z-index:100;text-decoration:none}
+.skip:focus{top:16px}
+
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+@media(min-width:900px){section{padding:112px 0}}
+
+/* ---------- tipografia ---------- */
+.label{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0 0 16px}
+h1,h2,h3{font-weight:900;font-style:italic;text-transform:uppercase;line-height:1.02;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(33px,9vw,80px)}
+h2{font-size:clamp(30px,7.5vw,56px);margin-bottom:20px}
+h3{font-size:22px;line-height:1.15}
+.kw{color:var(--accent);position:relative;white-space:nowrap}
+.kw::after{content:"";position:absolute;left:0;right:.08em;bottom:-.06em;height:.11em;background:var(--brand);border-radius:2px}
+.lead{font-size:clamp(17px,2.4vw,20px);color:var(--ink-2);max-width:40em;margin:0}
+p{margin:0 0 1em}
+.muted{color:var(--ink-2)}
+
+/* ---------- pulsanti ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:16px 28px;border-radius:var(--r-md);background:var(--brand);color:#fff;font:800 15px/1.2 var(--font);letter-spacing:.03em;text-transform:uppercase;text-decoration:none;border:2px solid var(--accent);transition:background .2s,transform .2s;text-align:center}
+.btn:hover{background:var(--brand-hover)}
+.btn:active{transform:translateY(1px)}
+.btn svg{flex:none;width:22px;height:22px}
+.btn-block{width:100%}
+@media(min-width:640px){.btn-block{width:auto}}
+.reassure{display:flex;flex-wrap:wrap;gap:6px 18px;margin:16px 0 0;padding:0;list-style:none;font-size:14px;color:var(--ink-2)}
+.reassure li::before{content:"✓";color:var(--accent);font-weight:800;margin-right:6px}
+
+/* ---------- header ---------- */
+.top{position:absolute;top:0;left:0;right:0;z-index:5;padding:18px 0}
+.top .wrap{display:flex;align-items:center;justify-content:space-between}
+.top img{width:104px}
+@media(min-width:760px){.top img{width:132px}}
+.top .btn{display:none;min-height:44px;padding:10px 18px;font-size:13px}
+@media(min-width:760px){.top .btn{display:inline-flex}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:96px 0 56px;min-height:min(100svh,880px);display:flex;align-items:center;isolation:isolate;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:
+  radial-gradient(60% 50% at 85% 15%,rgba(91,34,145,.45),transparent 70%),
+  radial-gradient(50% 40% at 0% 100%,rgba(91,34,145,.25),transparent 70%)}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.5;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(to bottom,#000 30%,transparent)}
+.hero h1{margin-bottom:18px}
+.hero .lead{margin-bottom:24px}
+.hero .label{margin-bottom:12px}
+@media(min-width:760px){.hero{padding:120px 0 72px}.hero h1{margin-bottom:24px}.hero .lead{margin-bottom:32px}}
+
+/* ---------- ti riconosci ---------- */
+.cards{display:grid;gap:16px;margin-top:36px}
+@media(min-width:800px){.cards{grid-template-columns:repeat(3,1fr);gap:20px}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:28px}
+.card .ico{width:48px;height:48px;border-radius:var(--r-md);background:var(--box);display:grid;place-items:center;margin-bottom:18px;color:var(--accent)}
+.card .ico svg{width:26px;height:26px}
+.card h3{margin-bottom:10px}
+.card p{color:var(--ink-2);margin:0}
+.box{margin-top:28px;background:var(--box);border-radius:var(--r-lg);padding:28px;font-size:clamp(19px,2.6vw,24px);font-weight:600;line-height:1.4}
+.box strong{color:#fff;font-weight:800}
+.box em{font-style:normal;color:#D6BCFF;font-weight:800}
+
+/* ---------- errori ---------- */
+.errors{display:grid;gap:16px;margin-top:36px;counter-reset:err}
+@media(min-width:800px){.errors{grid-template-columns:repeat(3,1fr);gap:20px}}
+.err{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:28px;overflow:hidden}
+.err .n{font-size:72px;font-weight:900;font-style:italic;line-height:1;color:transparent;-webkit-text-stroke:2px var(--accent);opacity:.9;margin-bottom:12px;display:block}
+.err h3{margin-bottom:10px}
+.err p{color:var(--ink-2)}
+.err .fix{margin:16px 0 0;padding-top:16px;border-top:1px solid var(--line);color:var(--ink);font-weight:600;font-size:15px}
+.err .fix b{color:var(--accent);text-transform:uppercase;letter-spacing:.12em;font-size:12px;display:block;margin-bottom:4px}
+
+/* ---------- come funziona ---------- */
+.alt{background:linear-gradient(180deg,transparent,rgba(91,34,145,.12) 30%,rgba(91,34,145,.12) 70%,transparent)}
+.steps{list-style:none;margin:40px 0 0;padding:0;display:grid;gap:20px}
+@media(min-width:900px){.steps{grid-template-columns:repeat(3,1fr)}}
+.step{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:28px}
+.step .tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;background:var(--brand);color:#fff;border-radius:var(--r-sm);padding:5px 10px;margin-bottom:16px}
+.step h3{margin-bottom:12px}
+.step p{color:var(--ink-2)}
+.step ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:10px}
+.step li{display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.45}
+.step li svg{flex:none;width:20px;height:20px;color:var(--accent);margin-top:1px}
+.step li b{color:#fff}
+.free{display:inline-block;margin-left:6px;font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--bg);background:var(--accent);padding:3px 7px;border-radius:var(--r-sm);vertical-align:middle;font-style:normal}
+
+/* ---------- storie ---------- */
+.stories{display:grid;gap:28px;margin-top:40px}
+@media(min-width:900px){.stories{grid-template-columns:1fr 1fr}}
+.story{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
+.ba figure{margin:0;position:relative;background:var(--surface-2)}
+.ba img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.ba figcaption{position:absolute;left:10px;top:10px;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;background:rgba(18,10,26,.85);padding:5px 9px;border-radius:var(--r-sm)}
+.ba figure:last-child figcaption{background:var(--brand)}
+.story-body{padding:28px}
+.story-body h3{font-size:28px;margin-bottom:4px}
+.story-body .meta{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+.story-body p{color:var(--ink-2)}
+.story-body p:last-child{margin:0;color:#fff;font-weight:600}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:820px;margin:36px 0 0}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;position:relative;font-weight:800;font-size:18px;line-height:1.35}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:14px;height:14px;margin-top:-10px;border-right:3px solid var(--accent);border-bottom:3px solid var(--accent);transform:rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(225deg);margin-top:-3px}
+.faq .a{padding:0 0 22px;color:var(--ink-2)}
+.faq .a p:last-child{margin:0}
+
+/* ---------- CTA finale ---------- */
+.final{text-align:center}
+.final .inner{background:var(--box);border-radius:var(--r-lg);padding:56px 24px;position:relative;overflow:hidden;isolation:isolate}
+.final .inner::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(70% 70% at 50% 0%,rgba(155,93,229,.35),transparent 70%)}
+.final h2{margin-left:auto;margin-right:auto;max-width:16em}
+.final .lead{margin:0 auto 32px;color:#DCD3EA}
+.final .reassure{justify-content:center}
+
+/* ---------- footer ---------- */
+footer{padding:40px 0 120px;border-top:1px solid var(--line);font-size:14px;color:var(--ink-2)}
+@media(min-width:760px){footer{padding-bottom:40px}}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between}
+footer img{width:110px}
+footer nav{display:flex;flex-wrap:wrap;gap:8px 20px}
+footer a,footer button{color:var(--ink-2);text-decoration:underline;text-underline-offset:3px;background:none;border:0;font:inherit;padding:4px 0;cursor:pointer}
+footer a:hover,footer button:hover{color:#fff}
+
+/* ---------- CTA fissa mobile ---------- */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:linear-gradient(to top,var(--bg) 60%,rgba(18,10,26,0));transform:translateY(110%);transition:transform .3s ease}
+.sticky.show{transform:none}
+.sticky .btn{width:100%}
+@media(min-width:760px){.sticky{display:none}}
+
+/* ---------- banner cookie ---------- */
+.cookie{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;max-width:520px;margin:0 auto;background:var(--surface-2);border:1px solid var(--line);border-radius:var(--r-lg);padding:20px;box-shadow:0 20px 50px rgba(0,0,0,.5);font-size:14px;color:var(--ink-2)}
+.cookie[hidden]{display:none}
+.cookie h2{font-size:16px;font-style:normal;text-transform:none;letter-spacing:0;color:#fff;margin:0 0 6px;font-weight:800}
+.cookie p{margin:0 0 14px}
+.cookie .row{display:flex;gap:10px}
+.cookie button{flex:1;min-height:44px;border-radius:var(--r-md);font:700 14px var(--font);cursor:pointer;border:2px solid var(--accent)}
+.cookie .yes{background:var(--brand);color:#fff}
+.cookie .no{background:transparent;color:#fff}
+
+/* ---------- animazioni allo scroll ---------- */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.js .reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .sticky,.btn,.faq summary::after{transition:none}
+}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Vai al contenuto</a>
+
+<!-- =====================================================================
+     NUMERO WHATSAPP: per cambiarlo cerca "393336445066" in questo file
+     e sostituiscilo ovunque (prefisso 39 + numero, senza + né spazi).
+     ===================================================================== -->
+
+<header class="top">
+  <div class="wrap">
+    <img src="images/logo-cht.png" width="600" height="216" alt="CHT – Competitive Human Training">
+    <a class="btn js-cta" href="https://wa.me/393336445066?text=Ciao%2C%20vorrei%20prenotare%20la%20chiamata%20conoscitiva" target="_blank" rel="noopener">Prenota la chiamata</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 1. HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <p class="label">Coaching online 1:1</p>
+      <h1 id="hero-title">Non sei bloccato dal tuo corpo. Ti manca la <span class="kw">strategia</span> giusta.</h1>
+      <p class="lead">Poco tempo tra lavoro e impegni? Costruiamo insieme un percorso su misura per rimetterti in forma, senza schede copiate e diete fai da te.</p>
+      <a id="hero-cta" class="btn btn-block js-cta" href="https://wa.me/393336445066?text=Ciao%2C%20vorrei%20prenotare%20la%20chiamata%20conoscitiva" target="_blank" rel="noopener">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6C8 23.4 10 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>
+        Prenota la chiamata gratuita
+      </a>
+      <ul class="reassure">
+        <li>Gratuita</li><li>Senza impegno</li><li>Ti rispondo su WhatsApp</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 2. TI RICONOSCI? -->
+  <section aria-labelledby="ric-title">
+    <div class="wrap">
+      <p class="label reveal">Ti riconosci?</p>
+      <h2 id="ric-title" class="reveal">Se almeno una di queste è <span class="kw">la tua</span> situazione, sei nel posto giusto</h2>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Hai poco tempo</h3>
+          <p>Tra lavoro, famiglia e mille impegni, ritagliarti spazio per allenarti sembra impossibile. E quando ci riesci, non sai se lo stai usando bene.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div>
+          <h3>Vuoi rimetterti in forma</h3>
+          <p>Vuoi stare bene, piacerti allo specchio e vedere finalmente il tuo fisico cambiare. Non tra dieci anni: con un percorso concreto.</p>
+        </article>
+        <article class="card reveal">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16"/><path d="M9.5 4.5A8 8 0 0 1 19.5 14.5"/><path d="M5.6 8.4A8 8 0 0 0 15.6 18.4"/></svg></div>
+          <h3>Sei stanco di provarci da solo</h3>
+          <p>Schede trovate online, diete fai da te, ripartenze ogni lunedì. Ti impegni, ma i risultati non arrivano o non durano.</p>
+        </article>
+      </div>
+      <p class="box reveal">Il problema <strong>non sei tu</strong> e non è la tua genetica. È che finora ti è mancata <em>una strategia costruita su di te.</em></p>
+    </div>
+  </section>
+
+  <!-- 3. I 3 ERRORI -->
+  <section aria-labelledby="err-title">
+    <div class="wrap">
+      <p class="label reveal">Perché non migliori</p>
+      <h2 id="err-title" class="reveal">I 3 <span class="kw">errori</span> più comuni</h2>
+      <p class="lead reveal">Li vedo ogni giorno in chi arriva da me dopo aver provato da solo. Se ne fai anche solo uno, stai sprecando tempo ed energie.</p>
+      <div class="errors">
+        <article class="err reveal">
+          <span class="n" aria-hidden="true">01</span>
+          <h3>Allenarsi tanto senza un piano</h3>
+          <p>Più allenamenti, più fatica, più ore in palestra. Ma senza una programmazione che si evolve nel tempo, il corpo si abitua e smette di rispondere.</p>
+          <p class="fix"><b>La soluzione</b>Una programmazione precisa, pensata per il tempo che hai davvero.</p>
+        </article>
+        <article class="err reveal">
+          <span class="n" aria-hidden="true">02</span>
+          <h3>Diete drastiche</h3>
+          <p>Tagli tutto, resisti qualche settimana, poi molli e torni al punto di partenza. Il problema non è la tua forza di volontà: è un approccio impossibile da mantenere.</p>
+          <p class="fix"><b>La soluzione</b>Abitudini alimentari sostenibili, che si adattano alla tua vita.</p>
+        </article>
+        <article class="err reveal">
+          <span class="n" aria-hidden="true">03</span>
+          <h3>Non misurare i progressi</h3>
+          <p>Se non misuri, vai a sensazione. E a sensazione non capisci cosa funziona, cosa no e quando è il momento di cambiare.</p>
+          <p class="fix"><b>La soluzione</b>Check regolari con dati, foto e video per correggere la rotta.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. COME FUNZIONA -->
+  <section class="alt" aria-labelledby="how-title" id="come-funziona">
+    <div class="wrap">
+      <p class="label reveal">Come funziona</p>
+      <h2 id="how-title" class="reveal">3 passi per <span class="kw">cambiare</span> davvero</h2>
+      <ol class="steps">
+        <li class="step reveal">
+          <span class="tag">Step 1</span>
+          <h3>Chiamata conoscitiva <span class="free">GRATIS</span></h3>
+          <p>Mi scrivi su WhatsApp e fissiamo una breve chiamata. Ci conosciamo, mi racconti dove sei e dove vuoi arrivare, e capiamo insieme se posso aiutarti.</p>
+        </li>
+        <li class="step reveal">
+          <span class="tag">Step 2</span>
+          <h3>Consulenza su Google Meet</h3>
+          <p>Un incontro approfondito in cui analizziamo:</p>
+          <ul>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>il tuo <b>storico di allenamento</b></span></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>il tuo <b>storico alimentare</b></span></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>i tuoi <b>obiettivi</b></span></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span>gli <b>ostacoli</b> che finora ti hanno frenato</span></li>
+          </ul>
+        </li>
+        <li class="step reveal">
+          <span class="tag">Step 3</span>
+          <h3>Il tuo percorso su misura</h3>
+          <p>Parti con un piano costruito su di te e non sei mai solo:</p>
+          <ul>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span><b>Programmazione e check</b> su Google Fogli</span></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span><b>Check foto e video</b> su WhatsApp</span></li>
+            <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span><b>Video correzioni</b> della tecnica su YouTube</span></li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 5. STORIE VERE
+       FOTO PRIMA/DOPO: sostituisci i 4 file nella cartella images/ mantenendo
+       lo stesso nome (alessandro-prima.jpg, alessandro-dopo.jpg,
+       alessia-prima.jpg, alessia-dopo.jpg). Formato consigliato 4:5 verticale,
+       es. 800×1000 px, JPG sotto i 200 KB. -->
+  <section aria-labelledby="stories-title">
+    <div class="wrap">
+      <p class="label reveal">Storie vere</p>
+      <h2 id="stories-title" class="reveal">Non è <span class="kw">genetica</span>. È strategia.</h2>
+      <div class="stories">
+        <article class="story reveal">
+          <div class="ba">
+            <figure>
+              <img src="images/alessandro-prima.jpg" width="800" height="1000" loading="lazy" decoding="async" alt="Alessandro prima del percorso CHT">
+              <figcaption>Prima</figcaption>
+            </figure>
+            <figure>
+              <img src="images/alessandro-dopo.jpg" width="800" height="1000" loading="lazy" decoding="async" alt="Alessandro oggi, dopo 3 anni di percorso CHT">
+              <figcaption>Dopo</figcaption>
+            </figure>
+          </div>
+          <div class="story-body">
+            <h3>Alessandro</h3>
+            <p class="meta">Si allena da 5 anni · Lo seguo da 3</p>
+            <p>Alessandro si allenava già da tempo, ma qualcosa non tornava. Insieme abbiamo individuato i problemi che lo frenavano, li abbiamo risolti uno alla volta e abbiamo migliorato le sue abitudini.</p>
+            <p>Oggi ha un fisico di cui va fiero.</p>
+          </div>
+        </article>
+        <article class="story reveal">
+          <div class="ba">
+            <figure>
+              <img src="images/alessia-prima.jpg" width="800" height="1000" loading="lazy" decoding="async" alt="Alessia prima del percorso CHT">
+              <figcaption>Prima</figcaption>
+            </figure>
+            <figure>
+              <img src="images/alessia-dopo.jpg" width="800" height="1000" loading="lazy" decoding="async" alt="Alessia oggi, dopo 2 anni di percorso CHT">
+              <figcaption>Dopo</figcaption>
+            </figure>
+          </div>
+          <div class="story-body">
+            <h3>Alessia</h3>
+            <p class="meta">2 anni di percorso</p>
+            <p>Alessia era convinta che fosse colpa della genetica. Non lo era. Abbiamo trovato la strategia giusta per lei e l'abbiamo applicata con costanza per 2 anni.</p>
+            <p>Oggi ha un fisico completamente diverso.</p>
+          </div>
+        </article>
+      </div>
+      <p class="reveal" style="margin-top:36px"><a class="btn btn-block js-cta" href="https://wa.me/393336445066?text=Ciao%2C%20vorrei%20prenotare%20la%20chiamata%20conoscitiva" target="_blank" rel="noopener">Voglio iniziare anche io</a></p>
+    </div>
+  </section>
+
+  <!-- 6. FAQ -->
+  <section aria-labelledby="faq-title">
+    <div class="wrap">
+      <p class="label reveal">Domande frequenti</p>
+      <h2 id="faq-title" class="reveal">Hai dei <span class="kw">dubbi?</span></h2>
+      <div class="faq reveal">
+        <details>
+          <summary>Ho poco tempo, funziona lo stesso?</summary>
+          <div class="a"><p>Sì: il percorso nasce proprio per chi ha una vita piena. Partiamo dal tempo che hai davvero a disposizione e costruiamo la programmazione intorno ai tuoi orari, non il contrario. Meglio poco tempo usato bene che tante ore senza un piano.</p></div>
+        </details>
+        <details>
+          <summary>Serve la palestra?</summary>
+          <div class="a"><p>Dipende dal tuo obiettivo e da cosa hai a disposizione. In consulenza valutiamo insieme dove ti alleni e quale attrezzatura hai, e il programma viene costruito su quello.</p></div>
+        </details>
+        <details>
+          <summary>Quanto costa?</summary>
+          <div class="a"><p>La chiamata conoscitiva è gratuita. Il costo del percorso si definisce in consulenza, in base al percorso più adatto a te e ai tuoi obiettivi. Nessuna sorpresa: sai tutto prima di decidere.</p></div>
+        </details>
+        <details>
+          <summary>Ho già provato da solo e non ha funzionato. Perché ora dovrebbe essere diverso?</summary>
+          <div class="a"><p>Perché non ti do una scheda generica: analizziamo cosa non ha funzionato finora, partendo dal tuo storico di allenamento e alimentare, e costruiamo una strategia su di te. Poi la correggiamo nel tempo con check regolari.</p></div>
+        </details>
+        <details>
+          <summary>Come funzionano i check?</summary>
+          <div class="a"><p>Programmazione e check sono su Google Fogli, le foto e i video li mandi su WhatsApp e ricevi le video correzioni della tecnica su YouTube. Così sai sempre cosa fare e se lo stai facendo bene.</p></div>
+        </details>
+        <details>
+          <summary>La chiamata mi impegna a qualcosa?</summary>
+          <div class="a"><p>No. È una chiacchierata gratuita per conoscerci e capire se posso aiutarti. Se non è il momento giusto o non fa per te, nessun problema.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. CTA FINALE -->
+  <section class="final" aria-labelledby="final-title" id="prenota">
+    <div class="wrap">
+      <div class="inner reveal">
+        <p class="label">Il primo passo è gratuito</p>
+        <h2 id="final-title">Smetti di provarci da solo. Inizia con la <span class="kw">strategia</span> giusta.</h2>
+        <p class="lead">Scrivimi su WhatsApp e prenota la tua chiamata conoscitiva gratuita. Capiamo insieme da dove partire.</p>
+        <a id="final-cta" class="btn btn-block js-cta" href="https://wa.me/393336445066?text=Ciao%2C%20vorrei%20prenotare%20la%20chiamata%20conoscitiva" target="_blank" rel="noopener">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2S21.8 6.6 21.8 12 17.4 21.8 12 21.8zM12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6C8 23.4 10 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0z"/></svg>
+          Prenota la chiamata gratuita
+        </a>
+        <ul class="reassure">
+          <li>Gratuita</li><li>Senza impegno</li><li>Risposta su WhatsApp</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="images/logo-cht.png" width="600" height="216" alt="CHT – Competitive Human Training" loading="lazy">
+    <p style="margin:0">© <span id="year">2026</span> CHT – Competitive Human Training · Davide Protani · P.IVA 03334690603</p>
+    <nav aria-label="Link legali">
+      <a href="privacy.html">Privacy e cookie</a>
+      <button type="button" id="cookie-settings" hidden>Preferenze cookie</button>
+    </nav>
+  </div>
+</footer>
+
+<!-- CTA fissa in basso (solo telefono) -->
+<div class="sticky" id="sticky" aria-hidden="true">
+  <a class="btn js-cta" tabindex="-1" href="https://wa.me/393336445066?text=Ciao%2C%20vorrei%20prenotare%20la%20chiamata%20conoscitiva" target="_blank" rel="noopener">Prenota la chiamata gratuita</a>
+</div>
+
+<!-- Banner cookie: compare solo se è impostato un ID del Meta Pixel -->
+<div class="cookie" id="cookie" role="dialog" aria-labelledby="cookie-title" aria-describedby="cookie-text" hidden>
+  <h2 id="cookie-title">Cookie</h2>
+  <p id="cookie-text">Uso il Meta Pixel per misurare l'efficacia delle mie pubblicità su Instagram e Facebook. Si attiva solo se accetti. <a href="privacy.html">Leggi l'informativa</a>.</p>
+  <div class="row">
+    <button type="button" class="no" id="cookie-no">Rifiuta</button>
+    <button type="button" class="yes" id="cookie-yes">Accetta</button>
+  </div>
+</div>
+
+<script>
+/* =====================================================================
+   META PIXEL
+   1. Inserisci qui sotto il tuo ID (solo numeri, tra le virgolette),
+      es. var META_PIXEL_ID = '123456789012345';
+   2. Finché è vuoto il Pixel resta spento e il banner cookie non compare.
+   3. Il Pixel si carica SOLO dopo che il visitatore clicca "Accetta".
+   ===================================================================== */
+var META_PIXEL_ID = '';
+
+(function(){
+  var KEY='cht-cookie-consent';
+  var banner=document.getElementById('cookie');
+  var settings=document.getElementById('cookie-settings');
+
+  function store(v){try{localStorage.setItem(KEY,v)}catch(e){}}
+  function read(){try{return localStorage.getItem(KEY)}catch(e){return null}}
+
+  function loadPixel(){
+    if(window.fbq||!META_PIXEL_ID) return;
+    /* Codice base ufficiale del Meta Pixel */
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init',META_PIXEL_ID);
+    fbq('track','PageView');
+  }
+
+  if(META_PIXEL_ID){
+    settings.hidden=false;
+    var c=read();
+    if(c==='yes') loadPixel();
+    else if(c!=='no') banner.hidden=false;
+    document.getElementById('cookie-yes').addEventListener('click',function(){store('yes');banner.hidden=true;loadPixel()});
+    document.getElementById('cookie-no').addEventListener('click',function(){store('no');banner.hidden=true});
+    settings.addEventListener('click',function(){
+      /* se il consenso era stato dato, il Pixel si spegne al prossimo caricamento */
+      try{localStorage.removeItem(KEY)}catch(e){}
+      banner.hidden=false;document.getElementById('cookie-yes').focus();
+    });
+  }
+
+  /* Evento "Contact" al click su qualsiasi pulsante WhatsApp (solo con consenso) */
+  document.querySelectorAll('.js-cta').forEach(function(a){
+    a.addEventListener('click',function(){ if(window.fbq) fbq('track','Contact'); });
+  });
+
+  document.getElementById('year').textContent=new Date().getFullYear();
+
+  /* Animazioni leggere allo scroll (disattivate con "riduci movimento") */
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var items=document.querySelectorAll('.reveal');
+  if(reduce||!('IntersectionObserver' in window)){
+    items.forEach(function(el){el.classList.add('in')});
+  }else{
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+    },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    items.forEach(function(el){io.observe(el)});
+  }
+
+  /* CTA fissa su mobile: appare dopo il pulsante dell'hero, sparisce sulla CTA finale */
+  var sticky=document.getElementById('sticky');
+  if('IntersectionObserver' in window){
+    var heroVisible=true,finalVisible=false;
+    var update=function(){sticky.classList.toggle('show',!heroVisible&&!finalVisible)};
+    new IntersectionObserver(function(e){heroVisible=e[0].isIntersecting;update()}).observe(document.getElementById('hero-cta'));
+    new IntersectionObserver(function(e){finalVisible=e[0].isIntersecting;update()}).observe(document.getElementById('final-cta'));
+  }else{sticky.classList.add('show')}
+})();
+</script>
+</body>
+</html>
