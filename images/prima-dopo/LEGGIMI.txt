@@ -1,0 +1,2 @@
+Metti qui le foto prima/dopo dei clienti (es. marco-prima.webp e marco-dopo.webp)
+e aggiungi una riga nella lista PRIMA_DOPO in index.html. Istruzioni nel README.
