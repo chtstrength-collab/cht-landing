@@ -70,7 +70,7 @@ Le storie di Alessandro e Alessia restano anche come testo nella sezione "Storie
 
 ## Cambiare il numero WhatsApp o il messaggio
 
-In `index.html` cerca `393336445066` e sostituiscilo **in tutti i punti** (sono 5) con il nuovo numero: prefisso `39` + numero, senza `+`, spazi o trattini.
+In `index.html` cerca `393336445066` e sostituiscilo **in tutti i punti** (sono 7) con il nuovo numero: prefisso `39` + numero, senza `+`, spazi o trattini.
 
 Il messaggio precompilato è il testo dopo `?text=`, con gli spazi scritti come `%20` e la virgola come `%2C`.
 
